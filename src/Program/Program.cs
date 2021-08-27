@@ -20,7 +20,6 @@ namespace Memory
         public static void Main()
         {
             Demo demo1 = new Demo("Demo 1");
-            demo1 = null;
         }
 
         private static void DestroyUnaccesibleObjects()
