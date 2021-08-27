@@ -10,7 +10,7 @@ Código de ejemplo del tema "ciclo de vida de los objetos".
 
 Este código utiliza una clase ```Demo``` que usaremos para entender el ciclo de vida de los objetos -mira el código [aquí](https://github.com/ucudal/PII_Memory_Start/blob/main/src/Library/Demo.cs)-.
 
-La clase tiene una propiedad ```Text``` que representa el estado del objeto. El valor inicial de esta propiedad se pasa como argumento al constructor ````Demo(string)```.
+La clase tiene una propiedad ```Text``` que representa el estado del objeto. El valor inicial de esta propiedad se pasa como argumento al constructor ```Demo(string)```.
 
 Cuando se crea una instancia de esta clase se imprime en la consola ```Construyendo <texto>...``` donde ```<texto>``` es el valor de la propiedad ```Text```.
 
