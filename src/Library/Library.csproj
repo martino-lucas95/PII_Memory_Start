@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Es necesario usar net48 en lugar de netcore para que se invoquen los finalizers 🤦 -->
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\..\.analyzers\Analyzers.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118"/>
+    <AdditionalFiles Include="..\..\.analyzers\stylecop.json" Link="stylecop.json"/>
+  </ItemGroup>
+</Project>

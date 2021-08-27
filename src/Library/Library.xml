@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Library</name>
+    </assembly>
+    <members>
+        <member name="T:Memory.Demo">
+            <summary>
+            Una clase de ejemplo para mostrar constructores y destructores. En la vida real no es necesario implementar un
+            destructor. En caso de que sea necesario que algo suceda deben implementar IDisposable.
+            </summary>
+        </member>
+        <member name="M:Memory.Demo.#ctor(System.String)">
+            <summary>
+            Crea una nueva instancia.
+            </summary>
+            <param name="text">Texto que representa el estado del objeto creado.</param>
+        </member>
+        <member name="P:Memory.Demo.Text">
+            <summary>
+            Una propiedad para demostrar el estado del objeto.
+            </summary>
+            <value>Obtiene o establece el texto que representa el estado del objeto.</value>
+        </member>
+        <member name="M:Memory.Demo.Finalize">
+            <summary>
+            Finaliza una instancia de la clase Demo.
+            </summary>
+        </member>
+    </members>
+</doc>

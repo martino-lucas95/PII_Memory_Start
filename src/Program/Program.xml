@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Program</name>
+    </assembly>
+    <members>
+        <member name="T:Memory.Program">
+            <summary>
+            Clase que contiene el punto de entrada al programa.
+            </summary>
+        </member>
+        <member name="M:Memory.Program.Main">
+            <summary>
+            El punto de entrada al programa.
+            </summary>
+        </member>
+    </members>
+</doc>
