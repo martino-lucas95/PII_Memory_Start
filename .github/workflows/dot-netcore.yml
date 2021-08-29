@@ -2,11 +2,11 @@ name: Build, Test & Publish Doc
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   generate-docs:
