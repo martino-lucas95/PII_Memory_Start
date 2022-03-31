@@ -19,8 +19,31 @@ namespace Memory
         /// </summary>
         public static void Main()
         {
-            Demo demo1 = new Demo("Demo 1");
+            CreateLocalDemo();
+            DestroyUnaccesibleObjects();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
         }
+
+    static void CreateLocalDemo()
+    {
+        Demo demo = new Demo("7");
+    }
+    static Demo CreateAndReturnDemo(string text)
+    {
+        Demo result = new Demo(text);
+        return result;
+    }
+
+    static void RenameDemo(Demo demo, string text)
+    {
+        Console.WriteLine($"Cambiando de {demo.Text} a {text}");
+        demo.Text = text;
+    }
+    static void NullifyDemo(Demo demo)
+    {
+        demo = null;
+    }
 
         private static void DestroyUnaccesibleObjects()
         {
